@@ -25,11 +25,17 @@ public class feladat {
         System.out.println("Adja meg a számot");
         int szam = scanner.nextInt();
         int i = 0;
+        int g = 0;
         for(i = 1; i<=szam; i++) {
             if ((szam % i) == 0) {
                 System.out.println(i);
+                g++;
             }
+
         }
+        System.out.println(g + " osztója van");
+
+        //
 
 
 
