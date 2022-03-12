@@ -7,7 +7,7 @@ public class feladat {
 
         //Szökőév
 
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Kérjük adja meg az évet");
         int ev = scanner.nextInt();
         if(ev<1582){
@@ -19,7 +19,18 @@ public class feladat {
         } else{
             System.out.println("Ez nem szökőév év");
             return;
+        } */
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Adja meg a számot");
+        int szam = scanner.nextInt();
+        int i = 0;
+        for(i = 1; i<=szam; i++) {
+            if ((szam % i) == 0) {
+                System.out.println(i);
+            }
         }
+
 
 
     }
